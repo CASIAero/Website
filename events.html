@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CASI TMU - Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+      .event-card img { width: 100%; height: auto; display: block; border-bottom: 2px solid #333; }
+      .event-actions a { margin-right: 10px; margin-bottom: 10px; display: inline-block; }
+      /* The grid will automatically adjust to having only 2 items now */
+      .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
+      .gallery-grid img { width: 100%; border-radius: 8px; object-fit: cover; }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="CASI-Logo.png" alt="CASI Logo">
+        <span>CASI TMU</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#team">Team</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <header class="hero" style="min-height: auto; padding-top: 120px; padding-bottom: 40px;">
+    <div class="hero-content" style="grid-template-columns: 1fr;">
+      <h1 class="fade-in-up">Upcoming Events</h1>
+    </div>
+  </header>
+
+  <section class="events-section" style="padding-top: 20px;">
+    <div class="events-grid">
+        
+      <div class="event-card" style="grid-column: 1 / -1; border: 2px solid var(--primary-color);">
+          <img src="CASI Conference.jpg" alt="Beyond Earth Conference Poster" style="border-radius: 8px 8px 0 0; border-bottom: 2px solid var(--primary-color);">
+          <div class="card-content">
+              <h3>⭐ CASI Space Conference 2026 - Beyond Earth: The Next Frontier</h3>
+              <p class="event-meta">Mar 14 (Sat) & Mar 15 (Sun) | DCC 103/104 (Daphne Cockwell Center, TMU)</p>
+              <p>Join us for a two-day immersive experience bringing together students, researchers, and industry professionals from across the aerospace, aviation, and space sectors. Features keynotes, panels, networking, and a case competition.</p>
+              <div class="event-actions" style="margin-top: 15px;">
+                  <a href="conference.html" class="btn btn-primary">View Conference Details</a>
+                  <a href="https://checkout.square.site/merchant/068C0Y8F0SVH6/checkout/VHGKIBNIILJZZYGWH7LW42TJ" class="btn btn-secondary" target="_blank">Buy Tickets</a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events-section">
+    <h2 class="section-title">Past Highlights</h2>
+    <div class="gallery-category">
+        <div class="gallery-grid">
+            <img src="CASI-Tour-MHI.jpg" alt="MHI Tour">
+            <img src="CASI-Case.jpg" alt="Competition">
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.instagram.com/casitmu/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/casitmu/"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:casi@torontomu.ca"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2026 CASI TMU. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
